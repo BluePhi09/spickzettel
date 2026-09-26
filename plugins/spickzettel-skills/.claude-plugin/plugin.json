@@ -1,0 +1,18 @@
+{
+  "name": "spickzettel-skills",
+  "displayName": "Spickzettel: Skill Curator",
+  "version": "1.0.0",
+  "author": {
+    "name": "Philipp Fluch",
+    "url": "https://github.com/BluePhi09"
+  },
+  "homepage": "https://github.com/BluePhi09/spickzettel",
+  "repository": "https://github.com/BluePhi09/spickzettel",
+  "license": "MIT",
+  "description": "Skills as procedural memory: guidance so Claude creates and improves its own skills, /learn to capture a session, usage tracking, and a weekly curator that marks unused agent-created skills stale after 14 days and archives them after 30 (restorable; your own and plugin skills are never touched).",
+  "keywords": [
+    "skills",
+    "curator",
+    "procedural-memory"
+  ]
+}

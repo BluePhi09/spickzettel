@@ -1,0 +1,20 @@
+{
+  "name": "spickzettel-search",
+  "displayName": "Spickzettel: Session Search",
+  "version": "1.0.0",
+  "author": {
+    "name": "Philipp Fluch",
+    "url": "https://github.com/BluePhi09"
+  },
+  "homepage": "https://github.com/BluePhi09/spickzettel",
+  "repository": "https://github.com/BluePhi09/spickzettel",
+  "license": "MIT",
+  "description": "`session_search`: SQLite FTS5 full-text index over all Claude Code transcripts (all projects, kept beyond transcript cleanup) with four modes: search, scroll, read, browse. Real messages, no LLM summaries.",
+  "keywords": [
+    "search",
+    "fts5",
+    "history",
+    "sessions",
+    "mcp"
+  ]
+}

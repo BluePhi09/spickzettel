@@ -1,0 +1,20 @@
+{
+  "description": "Spickzettel memory tool: per-turn failure budget reset + block direct edits of MEMORY.md/USER.md",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/hooks.py\" turn", "timeout": 10 }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|NotebookEdit",
+        "hooks": [
+          { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/hooks.py\" guard", "timeout": 10 }
+        ]
+      }
+    ]
+  }
+}

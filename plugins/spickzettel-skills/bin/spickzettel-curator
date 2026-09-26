@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# CLI for the Spickzettel skill curator (on Claude's Bash PATH while the plugin is enabled).
+exec python3 "$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)/scripts/curator.py" "$@"

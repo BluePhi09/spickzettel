@@ -1,0 +1,23 @@
+{
+  "name": "spickzettel-all",
+  "displayName": "Spickzettel: Complete Bundle",
+  "version": "1.0.0",
+  "author": {
+    "name": "Philipp Fluch",
+    "url": "https://github.com/BluePhi09"
+  },
+  "homepage": "https://github.com/BluePhi09/spickzettel",
+  "repository": "https://github.com/BluePhi09/spickzettel",
+  "license": "MIT",
+  "description": "Installs the complete Spickzettel memory system: memory files, memory tool, session search and skill curator.",
+  "keywords": [
+    "memory",
+    "bundle"
+  ],
+  "dependencies": [
+    "spickzettel-files",
+    "spickzettel-tool",
+    "spickzettel-search",
+    "spickzettel-skills"
+  ]
+}

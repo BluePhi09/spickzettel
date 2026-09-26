@@ -1,0 +1,18 @@
+{
+  "name": "spickzettel-files",
+  "displayName": "Spickzettel: Memory Files",
+  "version": "1.0.0",
+  "author": {
+    "name": "Philipp Fluch",
+    "url": "https://github.com/BluePhi09"
+  },
+  "homepage": "https://github.com/BluePhi09/spickzettel",
+  "repository": "https://github.com/BluePhi09/spickzettel",
+  "license": "MIT",
+  "description": "Curated, bounded MEMORY.md (2,200 chars) + USER.md (1,375 chars), injected into every session as a frozen snapshot at session start and after compaction. Direct edits are checked for limits, duplicates and injection patterns.",
+  "keywords": [
+    "memory",
+    "persistent-memory",
+    "context"
+  ]
+}

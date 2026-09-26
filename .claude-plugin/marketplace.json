@@ -1,0 +1,43 @@
+{
+  "name": "spickzettel",
+  "owner": {
+    "name": "Philipp Fluch",
+    "url": "https://github.com/BluePhi09"
+  },
+  "metadata": {
+    "description": "Spickzettel: persistent, curated memory for Claude Code, split into independently installable plugins.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "spickzettel-files",
+      "source": "./plugins/spickzettel-files",
+      "description": "Curated MEMORY.md + USER.md with char limits, injected as a frozen snapshot at session start and after compaction.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "spickzettel-tool",
+      "source": "./plugins/spickzettel-tool",
+      "description": "`memory` tool (add/replace/remove/batch) as a local MCP server. Pulls in spickzettel-files.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "spickzettel-search",
+      "source": "./plugins/spickzettel-search",
+      "description": "`session_search`: SQLite FTS5 full-text search over all past Claude Code sessions (search/scroll/read/browse).",
+      "version": "1.0.0"
+    },
+    {
+      "name": "spickzettel-skills",
+      "source": "./plugins/spickzettel-skills",
+      "description": "Skills as procedural memory: self-created skills, /learn, usage tracking, 14-day stale / 30-day archive curator.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "spickzettel-all",
+      "source": "./plugins/spickzettel-all",
+      "description": "Bundle: installs all four Spickzettel plugins.",
+      "version": "1.0.0"
+    }
+  ]
+}

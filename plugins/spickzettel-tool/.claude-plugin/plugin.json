@@ -1,0 +1,21 @@
+{
+  "name": "spickzettel-tool",
+  "displayName": "Spickzettel: memory Tool",
+  "version": "1.0.0",
+  "author": {
+    "name": "Philipp Fluch",
+    "url": "https://github.com/BluePhi09"
+  },
+  "homepage": "https://github.com/BluePhi09/spickzettel",
+  "repository": "https://github.com/BluePhi09/spickzettel",
+  "license": "MIT",
+  "description": "A `memory` tool as a local MCP server: add/replace/remove + atomic batch, substring matching, char budget with consolidation errors, dedup, injection/exfiltration scan, file lock + atomic writes. Requires spickzettel-files (installed automatically).",
+  "keywords": [
+    "memory",
+    "mcp",
+    "persistent-memory"
+  ],
+  "dependencies": [
+    "spickzettel-files"
+  ]
+}

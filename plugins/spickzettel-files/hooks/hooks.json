@@ -1,0 +1,20 @@
+{
+  "description": "Spickzettel curated memory: frozen MEMORY.md/USER.md snapshot at session start + rule check on direct edits",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/snapshot_hook.py\"", "timeout": 15 }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/guard_hook.py\"", "timeout": 15 }
+        ]
+      }
+    ]
+  }
+}
