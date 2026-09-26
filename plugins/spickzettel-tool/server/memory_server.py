@@ -125,7 +125,7 @@ def memory_tool(args):
 
 
 def main() -> None:
-    server = Server("spickzettel-memory", "0.1.0-beta.1", instructions=(
+    server = Server("spickzettel-memory", "0.1.0-beta.2", instructions=(
         "Curated persistent memory. Use the `memory` tool to save durable, every-session facts to MEMORY.md "
         "(your notes) or USER.md (user profile). There is no read action: the current content is in your context "
         "as a snapshot from session start."))
