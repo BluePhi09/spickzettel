@@ -57,7 +57,9 @@ Use temporary directories via the `SPICKZETTEL_*` variables when testing so your
 
 ## Versioning and releases
 
-- Bump `version` in the plugin's `.claude-plugin/plugin.json` **and** in its entry in `.claude-plugin/marketplace.json`; the two must match.
+- All plugins share one version number. Bump `version` in every `.claude-plugin/plugin.json`, in every entry of `.claude-plugin/marketplace.json` and in `metadata.version`, plus the version passed to `Server(...)` in both MCP servers. A test enforces that manifests match.
+- Add an entry to `CHANGELOG.md` for every user-visible change.
+- The project is in beta (`0.x`); breaking changes are allowed but must be called out in the changelog.
 - Plugin names, MCP server keys (`memory`, `sessions`) and tool names (`memory`, `session_search`) are part of the public interface. Users reference them in permission rules such as `mcp__plugin_spickzettel-tool_memory__memory`, so do not rename them casually.
 
 ## Style

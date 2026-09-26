@@ -161,5 +161,17 @@ class CuratorTest(Base):
         self.assertIn("No agent-created skills", self.c("status").stdout)
 
 
+class ManifestTest(unittest.TestCase):
+    def test_versions_match(self):
+        market = json.loads((ROOT / ".claude-plugin" / "marketplace.json").read_text())
+        version = market["metadata"]["version"]
+        for entry in market["plugins"]:
+            manifest = json.loads((ROOT / entry["source"] / ".claude-plugin" / "plugin.json").read_text())
+            self.assertEqual(entry["version"], version, entry["name"])
+            self.assertEqual(manifest["version"], version, entry["name"])
+        for server in ("spickzettel-tool/server/memory_server.py", "spickzettel-search/server/search_server.py"):
+            self.assertIn(f'"{version}"', (PLUGINS / server).read_text(), server)
+
+
 if __name__ == "__main__":
     unittest.main()

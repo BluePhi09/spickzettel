@@ -2,6 +2,8 @@
 
 **Persistent, curated memory for [Claude Code](https://code.claude.com)**: a small, bounded "cheat sheet" (German: *Spickzettel*) that Claude carries into every session, plus full-text search over all your past sessions and a self-maintaining skill library.
 
+> **Beta (0.1.0-beta.1).** Everything works and is tested, but names, config keys and storage layout may still change before 1.0. Please report bugs and ideas in [Issues](https://github.com/BluePhi09/spickzettel/issues). See [CHANGELOG.md](CHANGELOG.md).
+
 Split into plugins you can install individually:
 
 | Plugin | What it does | Requires |
