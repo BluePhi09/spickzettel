@@ -1,11 +1,14 @@
 ---
 name: learn
-description: Capture what was learned in this session as a reusable skill: create a new SKILL.md or patch an existing one (procedural memory).
+description: Use after a session to capture a concrete reusable lesson as a small skill update. Patch an existing skill first; create a new one only if needed.
 ---
 
 Review the conversation so far and update the skill library. Be active: most sessions that involved real work produce at least one skill update, even a small one.
 
 Focus requested by the user (may be empty): $ARGUMENTS
+
+## Scope
+Use this for a quick retrospective on a technique, correction, or workflow learned during the session. For a deliberate request to design, substantially rewrite, test, evaluate, or optimize a skill, use a general skill-creation workflow if one is available. If a request such as "make a skill from this conversation" could mean either and the context does not resolve it, ask one short clarifying question.
 
 ## Signals worth capturing
 - The user corrected your style, format, verbosity or approach for a kind of task ("stop doing X", "too verbose", "remember this").

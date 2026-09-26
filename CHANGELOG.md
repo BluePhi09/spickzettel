@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/). All plugins in this marketplace share one version number.
 
+## [0.1.0-beta.2] - 2026-09-27
+
+### Changed
+
+- Clarified that `/spickzettel-skills:learn` captures concrete lessons from a session with a small, patch-first skill update; substantial skill design and evaluation belong in a general skill-creation workflow when available.
+
 ## [0.1.0-beta.1] - 2026-09-26
 
 First public beta.
@@ -21,4 +27,5 @@ First public beta.
 - The curator only performs time-based transitions; it does not merge overlapping skills.
 - Claude Code's transcript format is internal and may change between versions.
 
-[0.1.0-beta.1]: https://github.com/BluePhi09/spickzettel/commits/main
+[0.1.0-beta.2]: https://github.com/BluePhi09/spickzettel/compare/v0.1.0-beta.1...v0.1.0-beta.2
+[0.1.0-beta.1]: https://github.com/BluePhi09/spickzettel/releases/tag/v0.1.0-beta.1

@@ -2,7 +2,7 @@
 
 **Persistent, curated memory for [Claude Code](https://code.claude.com)**: a small, bounded "cheat sheet" (German: *Spickzettel*) that Claude carries into every session, plus full-text search over all your past sessions and a self-maintaining skill library.
 
-> **Beta (0.1.0-beta.1).** Everything works and is tested, but names, config keys and storage layout may still change before 1.0. Please report bugs and ideas in [Issues](https://github.com/BluePhi09/spickzettel/issues). See [CHANGELOG.md](CHANGELOG.md).
+> **Beta (0.1.0-beta.2).** Everything works and is tested, but names, config keys and storage layout may still change before 1.0. Please report bugs and ideas in [Issues](https://github.com/BluePhi09/spickzettel/issues). See [CHANGELOG.md](CHANGELOG.md).
 
 Split into plugins you can install individually:
 
@@ -13,6 +13,8 @@ Split into plugins you can install individually:
 | `spickzettel-search` | `session_search`: SQLite FTS5 index over **all** Claude Code sessions in all projects. Four modes: search, scroll around a message, read a session, browse recent. Returns real messages, no LLM summaries. | - |
 | `spickzettel-skills` | Skills as procedural memory: Claude creates and improves its own skills, `/spickzettel-skills:learn` captures a session, and a weekly curator marks unused agent-created skills stale after 14 days and archives them after 30 (restorable). | - |
 | `spickzettel-all` | Bundle that installs all four. | - |
+
+**Capturing a lesson or designing a skill?** Use `/spickzettel-skills:learn` after a session to capture a concrete fix or correction, for example "save the debugging steps we just learned." It prefers updating an existing skill and creates a small one only when needed. For a request such as "design a new skill and test it with examples," use a general skill-creation workflow if one is installed. Spickzettel does not require one.
 
 **Why does the tool depend on the files plugin?** The `memory` tool deliberately has no read action. Claude sees the content through the snapshot. Without `spickzettel-files`, Claude could write memories but never read them back. `spickzettel-files` on its own works fine: Claude then maintains the files with Edit, and a guard hook enforces the rules.
 
